@@ -1,0 +1,54 @@
+{
+  "name": "cupiditatetenetur",
+  "version": "1.0.0",
+  "description": "A type-safe promise based http/s request library.",
+  "keywords": [
+    "request",
+    "tempore",
+    "http",
+    "ullam",
+    "typescript",
+    "laboriosam",
+    "runtime",
+    "molestiae",
+    "vero",
+    "ut",
+    "json"
+  ],
+  "main": "js/index",
+  "types": "dts/index",
+  "files": [
+    "js",
+    "dts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf js && rm -rf dts",
+    "start": "node js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeovanniParker/cupiditatetenetur.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "LeopoldoHilll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeovanniParker/cupiditatetenetur.git/issues"
+  },
+  "dependencies": {
+    "@element-ts/neon": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest",
+    "tslint": "latest",
+    "jest": "latest",
+    "@types/jest": "latest"
+  }
+}
